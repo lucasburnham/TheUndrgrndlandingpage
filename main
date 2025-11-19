@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>The Underground | Recruiting HQ</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Join The Underground – a high-performance door-to-door sales organization with elite training, mentorship, and a winning culture." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased">
+  <!-- Top Navigation -->
+  <header class="sticky top-0 z-50 border-b border-slate-800 bg-slate-950/90 backdrop-blur">
+    <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 md:px-6">
+      <div class="flex items-center gap-2">
+        <div class="flex h-8 w-8 items-center justify-center rounded-lg bg-red-600 text-xs font-bold tracking-tight">
+          UG
+        </div>
+        <div class="flex flex-col leading-tight">
+          <span class="text-sm font-semibold uppercase tracking-[0.18em] text-slate-300">
+            The Underground
+          </span>
+          <span class="text-xs text-slate-500">
+            High-Performance Sales
+          </span>
+        </div>
+      </div>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden items-center gap-6 text-xs font-medium uppercase tracking-[0.18em] text-slate-400 md:flex">
+        <a href="#about" class="hover:text-slate-100 transition">About</a>
+        <a href="#opportunity" class="hover:text-slate-100 transition">Opportunity</a>
+        <a href="#how-it-works" class="hover:text-slate-100 transition">How It Works</a>
+        <a href="#lifestyle" class="hover:text-slate-100 transition">Lifestyle</a>
+        <a href="#faq" class="hover:text-slate-100 transition">FAQ</a>
+        <a href="#cta" class="inline-flex items-center rounded-full border border-red-500 px-4 py-2 text-[11px] font-semibold text-red-400 hover:bg-red-600 hover:text-white transition">
+          Book a Call
+        </a>
+      </nav>
+
+      <!-- Mobile Menu Button -->
+      <button id="menuButton" class="flex h-9 w-9 items-center justify-center rounded-lg border border-slate-700 text-slate-200 md:hidden">
+        <span class="sr-only">Toggle menu</span>
+        <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none">
+          <path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Nav -->
+    <div id="mobileMenu" class="hidden border-t border-slate-800 bg-slate-950 md:hidden">
+      <nav class="mx-auto flex max-w-6xl flex-col gap-1 px-4 py-3 text-xs font-medium uppercase tracking-[0.18em] text-slate-300">
+        <a href="#about" class="py-1">About</a>
+        <a href="#opportunity" class="py-1">Opportunity</a>
+        <a href="#how-it-works" class="py-1">How It Works</a>
+        <a href="#lifestyle" class="py-1">Lifestyle</a>
+        <a href="#faq" class="py-1">FAQ</a>
+        <a href="#cta" class="mt-1 inline-flex items-center justify-center rounded-full bg-red-600 px-4 py-2 text-[11px] font-semibold text-white hover:bg-red-500 transition">
+          Book a Call
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="relative overflow-hidden border-b border-slate-800">
+      <div class="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(248,113,113,0.18),_transparent_55%),_radial-gradient(circle_at_bottom,_rgba(15,23,42,0.85),_transparent_55%)] opacity-90"></div>
+      <div class="relative mx-auto flex max-w-6xl flex-col gap-12 px-4 py-16 md:flex-row md:items-center md:py-20 lg:py-24">
+        <!-- Hero Copy -->
+        <div class="max-w-xl space-y-6">
+          <p class="text-xs font-semibold uppercase tracking-[0.28em] text-red-400">
+            Recruiting HQ · The Underground
+          </p>
+          <h1 class="text-3xl font-semibold tracking-tight text-slate-50 sm:text-4xl lg:text-[2.7rem]">
+            Elite door-to-door sales, built for people who refuse to live average.
+          </h1>
+          <p class="max-w-lg text-sm leading-relaxed text-slate-300">
+            The Underground is a high-performance sales squad for ambitious, coachable people who want real skills, real mentorship, and real upside.
+            No fluff. No gimmicks. Just work, growth, and a team that pushes you to your ceiling.
+          </p>
+
+          <div class="flex flex-col gap-3 sm:flex-row sm:items-center">
+            <a
+              href="https://calendly.com/lucasjburntham/30min"
+              target="_blank"
+              rel="noopener"
+              class="inline-flex items-center justify-center rounded-full bg-red-600 px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-red-600/30 hover:bg-red-500 transition"
+            >
+              Book a 30-Min Call
+            </a>
+            <a
+              href="#how-it-works"
+              class="inline-flex items-center justify-center rounded-full border border-slate-700 px-5 py-2.5 text-xs font-medium uppercase tracking-[0.18em] text-slate-300 hover:border-slate-500 hover:text-white transition"
+            >
+              See How It Works
+            </a>
+          </div>
+
+          <div class="flex flex-wrap items-center gap-4 pt-2 text-xs text-slate-400">
+            <div class="flex items-center gap-2">
+              <span class="h-1.5 w-1.5 rounded-full bg-emerald-400"></span>
+              <span>Training included · No experience required</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="h-1.5 w-1.5 rounded-full bg-sky-400"></span>
+              <span>Top reps have earned strong commissions in a single season</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Side Panel / Visual Placeholder -->
+        <div class="md:flex-1">
+          <div class="rounded-2xl border border-slate-800 bg-slate-900/60 p-4 shadow-xl shadow-slate-900/80">
+            <div class="mb-4 flex items-center justify-between">
+              <p class="text-xs font-semibold uppercase tracking-[0.18em] text-slate-400">
+                Underground Snapshot
+              </p>
+              <span class="rounded-full bg-slate-800 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.18em] text-slate-300">
+                2025 Season
+              </span>
+            </div>
+            <div class="grid grid-cols-2 gap-4 text-xs text-slate-200">
+              <div class="space-y-1 rounded-xl bg-slate-900/80 p-3">
+                <p class="text-[10px] uppercase tracking-[0.18em] text-slate-500">Reps Trained</p>
+                <p class="text-xl font-semibold text-slate-50">200+</p>
+                <p class="text-[11px] text-slate-400">Coached from zero to closing real deals.</p>
+              </div>
+              <div class="space-y-1 rounded-xl bg-slate-900/80 p-3">
+                <p class="text-[10px] uppercase tracking-[0.18em] text-slate-500">Markets</p>
+                <p class="text-xl font-semibold text-slate-50">Multi-State</p>
+                <p class="text-[11px] text-slate-400">Solar, fiber & home services campaigns.</p>
+              </div>
+              <div class="space-y-1 rounded-xl bg-slate-900/80 p-3">
+                <p class="text-[10px] uppercase tracking-[0.18em] text-slate-500">Focus</p>
+                <p class="text-xl font-semibold text-slate-50">Skills First</p>
+                <p class="text-[11px] text-slate-400">Real sales skills you keep for life.</p>
+              </div>
+              <div class="space-y-1 rounded-xl bg-slate-900/80 p-3">
+                <p class="text-[10px] uppercase tracking-[0.18em] text-slate-500">Culture</p>
+                <p class="text-xl font-semibold text-slate-50">Competitive</p>
+                <p class="text-[11px] text-slate-400">Accountability, fun, and high standards.</p>
+              </div>
+            </div>
+            <!-- Placeholder for future team image / graphic -->
+            <div class="mt-4 rounded-xl border border-dashed border-slate-700 bg-slate-900/60 px-4 py-3 text-[11px] text-slate-400">
+              <p class="font-medium text-slate-300">📸 Drop in your team photo here</p>
+              <p>Replace this card with a real team photo or culture collage for higher conversion.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Social Proof / Credibility -->
+    <section id="about" class="border-b border-slate-800 bg-slate-950">
+      <div class="mx-auto max-w-6xl px-4 py-14 md:px-6 md:py-16">
+        <div class="flex flex-col gap-10 md:flex-row md:items-start">
+          <div class="max-w-md space-y-3">
+            <p class="text-xs font-semibold uppercase tracking-[0.28em] text-red-400">
+              Why people join
+            </p>
+            <h2 class="text-xl font-semibold tracking-tight text-slate-50 md:text-2xl">
+              Not just a “summer sales job”. A proving ground for your next level.
+            </h2>
+            <p class="text-sm leading-relaxed text-slate-300">
+              The Underground exists to develop people who are hungry for more: more skills, more ownership, more options.
+              We use door-to-door as the hardest, fastest way to build those skills with real stakes and real accountability.
+            </p>
+          </div>
+
+          <div class="grid flex-1 grid-cols-1 gap-4 sm:grid-cols-2">
+            <div class="rounded-2xl border border-slate-800 bg-slate-900/60 p-4">
+              <p class="text-xs font-semibold uppercase tracking-[0.18em] text-slate-400">
+                “I learned more here than 4 years of school”
+              </p>
+              <p class="mt-2 text-sm text-slate-200">
+                “I came in with zero sales background. The coaching, call reviews, and live reps on doors changed how I
+                communicate everywhere – interviews, relationships, business. Money was great, but the skills are the real win.”
+              </p>
+              <p class="mt-3 text-xs font-medium text-slate-400">
+                — Alex, 1st-year rep
+              </p>
+            </div>
+            <div class="rounded-2xl border border-slate-800 bg-slate-900/60 p-4">
+              <p class="text-xs font-semibold uppercase tracking-[0.18em] text-slate-400">
+                Competitive but team-first
+              </p>
+              <p class="mt-2 text-sm text-slate-200">
+                “Everyone’s chasing leaderboards, but nobody’s hoarding. We push each other, break down deals together,
+                and celebrate wins as a team.”
+              </p>
+              <p class="mt-3 text-xs font-medium text-slate-400">
+                — Jordan, returning leader
+              </p>
+            </div>
+            <div class="rounded-2xl border border-slate-800 bg-slate-900/60 p-4">
+              <p class="text-xs font-semibold uppercase tracking-[0.18em] text-slate-400">
+                Real campaigns, real impact
+              </p>
+              <p class="mt-2 text-sm text-slate-200">
+                Solar, fiber, and home services that actually help families lower costs and upgrade their home.
+              </p>
+            </div>
+            <div class="rounded-2xl border border-slate-800 bg-slate-900/60 p-4">
+              <p class="text-xs font-semibold uppercase tracking-[0.18em] text-slate-400">
+                Mentorship built-in
+              </p>
+              <p class="mt-2 text-sm text-slate-200">
+                Direct access to leaders who’ve already done what you’re trying to do – not just managers checking boxes.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- What You Get -->
+    <section id="opportunity" class="border-b border-slate-800 bg-slate-950">
+      <div class="mx-auto max-w-6xl px-4 py-14 md:px-6 md:py-16">
+        <div class="mb-8 flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
+          <div>
+            <p class="text-xs font-semibold uppercase tracking-[0.28em] text-red-400">
+              The opportunity
+            </p>
+            <h2 class="mt-1 text-xl font-semibold tracking-tight text-slate-50 md:text-2xl">
+              What you get when you run with The Underground.
+            </h2>
+          </div>
+          <p class="max-w-md text-xs text-slate-400">
+            No experience needed. We care about attitude, hunger, and coachability. We’ll train you on the rest.
+          </p>
+        </div>
+
+        <div class="grid gap-5 md:grid-cols-3">
+          <div class="flex flex-col rounded-2xl border border-slate-800 bg-slate-900/60 p-5">
+            <p class="text-xs font-semibold uppercase tracking-[0.18em] text-slate-400">
+              01 · Elite Training
+            </p>
+            <p class="mt-2 text-sm font-semibold text-slate-50">
+              Tactical sales training that actually gets used.
+            </p>
+            <p class="mt-2 text-sm text-slate-300">
+              Proven scripts, live roleplays, door reviews, and breakdowns of real conversations – not theory.
+            </p>
+          </div>
+
+          <div class="flex flex-col rounded-2xl border border-slate-800 bg-slate-900/60 p-5">
+            <p class="text-xs font-semibold uppercase tracking-[0.18em] text-slate-400">
+              02 · Mentorship & Leadership Track
+            </p>
+            <p class="mt-2 text-sm font-semibold text-slate-50">
+              Learn directly from high-performing leaders.
+            </p>
+            <p class="mt-2 text-sm text-slate-300">
+              Weekly 1:1s, team meetings, and leadership opportunities as you grow and start leading your own squad.
+            </p>
+          </div>
+
+          <div class="flex flex-col rounded-2xl border border-slate-800 bg-slate-900/60 p-5">
+            <p class="text-xs font-semibold uppercase tracking-[0.18em] text-slate-400">
+              03 · Performance-Based Pay
+            </p>
+            <p class="mt-2 text-sm font-semibold text-slate-50">
+              Your upside is tied to your output.
+            </p>
+            <p class="mt-2 text-sm text-slate-300">
+              Commission-based structures with the opportunity for strong earnings when you execute at a high level.
+              No guarantees, just a clear path and support.
+            </p>
+          </div>
+
+          <div class="flex flex-col rounded-2xl border border-slate-800 bg-slate-900/60 p-5">
+            <p class="text-xs font-semibold uppercase tracking-[0.18em] text-slate-400">
+              04 · Real Products
+            </p>
+            <p class="mt-2 text-sm font-semibold text-slate-50">
+              Solar, fiber, and home services that matter.
+            </p>
+            <p class="mt-2 text-sm text-slate-300">
+              You’ll be offering services that actually help families – lower bills, faster internet, better homes.
+            </p>
+          </div>
+
+          <div class="flex flex-col rounded-2xl border border-slate-800 bg-slate-900/60 p-5">
+            <p class="text-xs font-semibold uppercase tracking-[0.18em] text-slate-400">
+              05 · Culture & Competition
+            </p>
+            <p class="mt-2 text-sm font-semibold text-slate-50">
+              Leaderboards, trips, and a team that pushes you.
+            </p>
+            <p class="mt-2 text-sm text-slate-300">
+              Weekly competitions, incentives, and team events. We take winning seriously and keep it fun.
+            </p>
+          </div>
+
+          <div class="flex flex-col rounded-2xl border border-slate-800 bg-slate-900/60 p-5">
+            <p class="text-xs font-semibold uppercase tracking-[0.18em] text-slate-400">
+              06 · Transferable Skills
+            </p>
+            <p class="mt-2 text-sm font-semibold text-slate-50">
+              Skills you keep long after the season.
+            </p>
+            <p class="mt-2 text-sm text-slate-300">
+              Communication, resilience, leadership, and the ability to create income with your skillset – anywhere you go.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how-it-works" class="border-b border-slate-800 bg-slate-950">
+      <div class="mx-auto max-w-6xl px-4 py-14 md:px-6 md:py-16">
+        <div class="mb-8 flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
+          <div>
+            <p class="text-xs font-semibold uppercase tracking-[0.28em] text-red-400">
+              Simple path
+            </p>
+            <h2 class="mt-1 text-xl font-semibold tracking-tight text-slate-50 md:text-2xl">
+              How to get started with The Underground.
+            </h2>
+          </div>
+        </div>
+
+        <div class="grid gap-5 md:grid-cols-4">
+          <div class="relative rounded-2xl border border-slate-800 bg-slate-900/60 p-5">
+            <div class="mb-3 flex items-center justify-between">
+              <span class="flex h-7 w-7 items-center justify-center rounded-full bg-red-600 text-xs font-semibold">
+                1
+              </span>
+              <span class="text-[10px] font-semibold uppercase tracking-[0.18em] text-slate-500">
+                20–30 mins
+              </span>
+            </div>
+            <p class="text-sm font-semibold text-slate-50">Book a call</p>
+            <p class="mt-2 text-sm text-slate-300">
+              Click “Book a Call” and choose a time that works. We’ll walk through your goals and make sure this is a fit.
+            </p>
+          </div>
+
+          <div class="relative rounded-2xl border border-slate-800 bg-slate-900/60 p-5">
+            <div class="mb-3 flex items-center justify-between">
+              <span class="flex h-7 w-7 items-center justify-center rounded-full bg-red-600 text-xs font-semibold">
+                2
+              </span>
+              <span class="text-[10px] font-semibold uppercase tracking-[0.18em] text-slate-500">
+                Conversation
+              </span>
+            </div>
+            <p class="text-sm font-semibold text-slate-50">Interview & expectations</p>
+            <p class="mt-2 text-sm text-slate-300">
+              This is a two-way conversation. We’ll be upfront about expectations, schedule, and standards.
+            </p>
+          </div>
+
+          <div class="relative rounded-2xl border border-slate-800 bg-slate-900/60 p-5">
+            <div class="mb-3 flex items-center justify-between">
+              <span class="flex h-7 w-7 items-center justify-center rounded-full bg-red-600 text-xs font-semibold">
+                3
+              </span>
+              <span class="text-[10px] font-semibold uppercase tracking-[0.18em] text-slate-500">
+                Prep
+              </span>
+            </div>
+            <p class="text-sm font-semibold text-slate-50">Lock in training</p>
+            <p class="mt-2 text-sm text-slate-300">
+              If accepted, you’ll get access to training materials, scripts, and prep work so you don’t show up guessing.
+            </p>
+          </div>
+
+          <div class="relative rounded-2xl border border-slate-800 bg-slate-900/60 p-5">
+            <div class="mb-3 flex items-center justify-between">
+              <span class="flex h-7 w-7 items-center justify-center rounded-full bg-red-600 text-xs font-semibold">
+                4
+              </span>
+              <span class="text-[10px] font-semibold uppercase tracking-[0.18em] text-slate-500">
+                Launch
+              </span>
+            </div>
+            <p class="text-sm font-semibold text-slate-50">Hit the doors with your crew</p>
+            <p class="mt-2 text-sm text-slate-300">
+              You’ll launch in a market with your team, leaders, and a clear game plan – not alone.
+            </p>
+          </div>
+        </div>
+
+        <div class="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+          <p class="text-xs text-slate-400">
+            You’re not signing your life away on the first call. You’re just getting clear on whether this is your next move.
+          </p>
+          <a
+            href="https://calendly.com/lucasjburntham/30min"
+            target="_blank"
+            rel="noopener"
+            class="inline-flex items-center justify-center rounded-full bg-red-600 px-6 py-2.5 text-xs font-semibold uppercase tracking-[0.18em] text-white hover:bg-red-500 transition"
+          >
+            Book a Call Now
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lifestyle / Culture -->
+    <section id="lifestyle" class="border-b border-slate-800 bg-slate-950">
+      <div class="mx-auto max-w-6xl px-4 py-14 md:px-6 md:py-16">
+        <div class="mb-8 flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
+          <div>
+            <p class="text-xs font-semibold uppercase tracking-[0.28em] text-red-400">
+              Culture & lifestyle
+            </p>
+            <h2 class="mt-1 text-xl font-semibold tracking-tight text-slate-50 md:text-2xl">
+              Work hard. Compete hard. Grow fast.
+            </h2>
+          </div>
+        </div>
+
+        <div class="grid gap-6 md:grid-cols-2">
+          <div class="space-y-4 text-sm text-slate-300">
+            <p>
+              The Underground isn’t for people who want comfort. It’s for people who want to build something in themselves
+              they can’t get from a normal job.
+            </p>
+            <ul class="space-y-3 text-sm text-slate-300">
+              <li class="flex gap-2">
+                <span class="mt-[2px] h-1.5 w-1.5 flex-shrink-0 rounded-full bg-red-500"></span>
+                <span>Daily training and call breakdowns so you get better fast.</span>
+              </li>
+              <li class="flex gap-2">
+                <span class="mt-[2px] h-1.5 w-1.5 flex-shrink-0 rounded-full bg-red-500"></span>
+                <span>Leaderboards, incentives, and weekly competitions for people who hate losing.</span>
+              </li>
+              <li class="flex gap-2">
+                <span class="mt-[2px] h-1.5 w-1.5 flex-shrink-0 rounded-full bg-red-500"></span>
+                <span>Team trips, late-night strategy sessions, and a crew that actually has your back.</span>
+              </li>
+              <li class="flex gap-2">
+                <span class="mt-[2px] h-1.5 w-1.5 flex-shrink-0 rounded-full bg-red-500"></span>
+                <span>A track to grow into leadership and build your own team once you’ve earned it.</span>
+              </li>
+            </ul>
+            <p class="text-xs text-slate-400">
+              You won’t be babysat. You’ll be led, challenged, and supported if you show up the same way.
+            </p>
+          </div>
+
+          <!-- Visual layout placeholder -->
+          <div class="grid gap-3 sm:grid-cols-2">
+            <div class="h-40 rounded-2xl border border-dashed border-slate-700 bg-slate-900/60 p-3 text-[11px] text-slate-400">
+              <p class="font-medium text-slate-200">🏙 Market shots</p>
+              <p>Add photos of teams in the field or in different cities.</p>
+            </div>
+            <div class="h-40 rounded-2xl border border-dashed border-slate-700 bg-slate-900/60 p-3 text-[11px] text-slate-400">
+              <p class="font-medium text-slate-200">🛫 Trips & events</p>
+              <p>Drop in pictures from retreats, trips, and competitions.</p>
+            </div>
+            <div class="h-40 rounded-2xl border border-dashed border-slate-700 bg-slate-900/60 p-3 text-[11px] text-slate-400 sm:col-span-2">
+              <p class="font-medium text-slate-200">🎯 Leaderboard / whiteboard</p>
+              <p>Screenshot or recreate your actual leaderboard here to make the competition real.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="border-b border-slate-800 bg-slate-950">
+      <div class="mx-auto max-w-6xl px-4 py-14 md:px-6 md:py-16">
+        <div class="mb-6 max-w-xl space-y-3">
+          <p class="text-xs font-semibold uppercase tracking-[0.28em] text-red-400">
+            Questions
+          </p>
+          <h2 class="text-xl font-semibold tracking-tight text-slate-50 md:text-2xl">
+            FAQ – read this before you book a call.
+          </h2>
+        </div>
+
+        <div class="space-y-3 rounded-2xl border border-slate-800 bg-slate-900/60 p-5 text-sm text-slate-200">
+          <details class="group border-b border-slate-800 last:border-b-0 py-3">
+            <summary class="flex cursor-pointer list-none items-center justify-between text-sm font-medium text-slate-100">
+              <span>Do I need sales experience?</span>
+              <span class="text-xs text-slate-500 group-open:hidden">+</span>
+              <span class="hidden text-xs text-slate-500 group-open:inline">−</span>
+            </summary>
+            <p class="mt-2 text-sm text-slate-300">
+              No. We care far more about your work ethic, coachability, and attitude. We’ll train you on our systems and scripts
+              if you bring effort and honesty.
+            </p>
+          </details>
+
+          <details class="group border-b border-slate-800 last:border-b-0 py-3">
+            <summary class="flex cursor-pointer list-none items-center justify-between text-sm font-medium text-slate-100">
+              <span>How is pay structured?</span>
+              <span class="text-xs text-slate-500 group-open:hidden">+</span>
+              <span class="hidden text-xs text-slate-500 group-open:inline">−</span>
+            </summary>
+            <p class="mt-2 text-sm text-slate-300">
+              Compensation is primarily commission-based and may include performance incentives depending on the campaign.
+              There are no guaranteed earnings – your results depend on your execution, consistency, and performance.
+            </p>
+          </details>
+
+          <details class="group border-b border-slate-800 last:border-b-0 py-3">
+            <summary class="flex cursor-pointer list-none items-center justify-between text-sm font-medium text-slate-100">
+              <span>Is door-to-door actually safe and legit?</span>
+              <span class="text-xs text-slate-500 group-open:hidden">+</span>
+              <span class="hidden text-xs text-slate-500 group-open:inline">−</span>
+            </summary>
+            <p class="mt-2 text-sm text-slate-300">
+              Door-to-door is hard work, but when run correctly it’s a legitimate, regulated sales channel.
+              We train on professionalism, ethics, and how to operate respectfully in every neighborhood.
+            </p>
+          </details>
+
+          <details class="group border-b border-slate-800 last:border-b-0 py-3">
+            <summary class="flex cursor-pointer list-none items-center justify-between text-sm font-medium text-slate-100">
+              <span>What does a typical day look like?</span>
+              <span class="text-xs text-slate-500 group-open:hidden">+</span>
+              <span class="hidden text-xs text-slate-500 group-open:inline">−</span>
+            </summary>
+            <p class="mt-2 text-sm text-slate-300">
+              Training and meetings earlier in the day, then several focused hours on doors in the afternoon and evening.
+              It’s intense, but structured so you’re not just wandering around hoping.
+            </p>
+          </details>
+
+          <details class="group border-b border-slate-800 last:border-b-0 py-3">
+            <summary class="flex cursor-pointer list-none items-center justify-between text-sm font-medium text-slate-100">
+              <span>Can I do this part-time?</span>
+              <span class="text-xs text-slate-500 group-open:hidden">+</span>
+              <span class="hidden text-xs text-slate-500 group-open:inline">−</span>
+            </summary>
+            <p class="mt-2 text-sm text-slate-300">
+              Some campaigns have flexibility, but this is not a casual side hustle. The people who win here treat it like a real
+              commitment. We’ll talk through your schedule on the call.
+            </p>
+          </details>
+
+          <details class="group py-3">
+            <summary class="flex cursor-pointer list-none items-center justify-between text-sm font-medium text-slate-100">
+              <span>What’s the next step if I’m interested?</span>
+              <span class="text-xs text-slate-500 group-open:hidden">+</span>
+              <span class="hidden text-xs text-slate-500 group-open:inline">−</span>
+            </summary>
+            <p class="mt-2 text-sm text-slate-300">
+              Simple: book a call using the link on this page. We’ll talk through your goals, answer questions, and decide together
+              if The Underground is the right move for you.
+            </p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section id="cta" class="border-b border-slate-800 bg-gradient-to-b from-slate-950 via-slate-950 to-black">
+      <div class="mx-auto max-w-6xl px-4 py-14 md:px-6 md:py-16">
+        <div class="mx-auto max-w-2xl rounded-3xl border border-red-600/60 bg-slate-950/80 p-8 text-center shadow-[0_0_65px_rgba(248,113,113,0.35)]">
+          <p class="text-xs font-semibold uppercase tracking-[0.28em] text-red-400">
+            Ready to move?
+          </p>
+          <h2 class="mt-3 text-2xl font-semibold tracking-tight text-slate-50">
+            If you’re serious about leveling up, book the call.
+          </h2>
+          <p class="mt-3 text-sm text-slate-300">
+            This isn’t for everyone. If you want comfort, there are easier paths. If you want growth, pressure, and a team that expects the best from you, start the conversation.
+          </p>
+
+          <div class="mt-6 flex flex-col items-center justify-center gap-3">
+            <a
+              href="https://calendly.com/lucasjburntham/30min"
+              target="_blank"
+              rel="noopener"
+              class="inline-flex w-full items-center justify-center rounded-full bg-red-600 px-6 py-3 text-sm font-semibold text-white hover:bg-red-500 transition sm:w-auto"
+            >
+              Book Your 30-Min Call
+            </a>
+            <p class="text-[11px] text-slate-400">
+              No pressure, no hard close – just a real conversation about whether The Underground fits your goals.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-black">
+    <div class="mx-auto flex max-w-6xl flex-col gap-4 px-4 py-6 text-[11px] text-slate-500 md:flex-row md:items-center md:justify-between">
+      <p>© <span id="year"></span> The Underground. All rights reserved.</p>
+      <div class="flex flex-wrap items-center gap-4">
+        <p>For questions, reach out to your Underground contact or book a call on this page.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Simple JS for mobile nav + year -->
+  <script>
+    const menuButton = document.getElementById("menuButton");
+    const mobileMenu = document.getElementById("mobileMenu");
+    if (menuButton && mobileMenu) {
+      menuButton.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    }
+    const yearSpan = document.getElementById("year");
+    if (yearSpan) {
+      yearSpan.textContent = new Date().getFullYear();
+    }
+  </script>
+</body>
+</html>
